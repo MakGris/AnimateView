@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2k-jZ-O3L">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2k-jZ-O3L" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="87" y="104" width="240" height="160"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a3d-QC-ZSL">
@@ -34,7 +34,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEw-hw-d9z">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEw-hw-d9z">
                                                 <rect key="frame" x="0.0" y="61" width="70" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,27 +67,39 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-tA-Mt5">
-                                <rect key="frame" x="87" y="684.5" width="240" height="34"/>
-                                <color key="backgroundColor" red="0.52357408220000001" green="0.57596700170000004" blue="0.35934768360000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9U-MO-aZI">
+                                <rect key="frame" x="87" y="685.5" width="240" height="33"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Start animation">
+                                <state key="normal" title="Run Animation">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="runAnimationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzV-DI-mgE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="f7R-tA-Mt5" firstAttribute="width" secondItem="m2k-jZ-O3L" secondAttribute="width" id="7qc-cv-DDR"/>
+                            <constraint firstItem="u9U-MO-aZI" firstAttribute="width" secondItem="m2k-jZ-O3L" secondAttribute="width" id="Nu6-Bf-E8k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m2k-jZ-O3L" secondAttribute="trailing" constant="87" id="PX6-Fi-OZS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f7R-tA-Mt5" secondAttribute="bottom" multiplier="1.2" id="V5e-co-5oO"/>
+                            <constraint firstItem="u9U-MO-aZI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TTa-3p-sEf"/>
                             <constraint firstItem="m2k-jZ-O3L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="ZBn-lD-RYg"/>
-                            <constraint firstItem="f7R-tA-Mt5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ggE-4p-wuq"/>
                             <constraint firstItem="m2k-jZ-O3L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="uFi-Aw-ho3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u9U-MO-aZI" secondAttribute="bottom" multiplier="1.2" id="ulP-9i-ycq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="m2k-jZ-O3L" id="njt-dA-oue"/>
+                        <outlet property="buttonLabel" destination="u9U-MO-aZI" id="x4r-Vq-IAa"/>
+                        <outlet property="curveLabel" destination="FJT-rV-q7g" id="be4-hc-V2D"/>
+                        <outlet property="delayLabel" destination="Rjp-6A-OVB" id="c01-2t-JuK"/>
+                        <outlet property="durationLabel" destination="WLS-4E-yij" id="ywN-jW-2SV"/>
+                        <outlet property="forceLabel" destination="OEw-hw-d9z" id="rcc-vo-Oan"/>
+                        <outlet property="presetLabel" destination="wgm-MO-mhD" id="QLx-bt-zpn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

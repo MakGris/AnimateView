@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Spring
 
 struct Animation {
     let preset: String
@@ -15,7 +16,10 @@ struct Animation {
     let delay: CGFloat
     
     static func getAnimation() -> Animation {
-        let someAnimation = Animation(preset: AnimationPreset.allCases.randomElement(), curve: AnimationCurve.allCases.randomElement(), force: 0...1, duration: 1...3, delay: 0...2)
+        let presets = Spring.AnimationPreset.allCases
+        let curves = Spring.AnimationCurve.allCases
+        let someAnimation = Animation(preset: presets.randomElement()?.rawValue ?? "", curve: curves.randomElement()?.rawValue ?? "", force: 1, duration: 1, delay: 1)
+        return someAnimation
     }
     
 }
