@@ -93,7 +93,6 @@
                     </view>
                     <connections>
                         <outlet property="animationView" destination="m2k-jZ-O3L" id="njt-dA-oue"/>
-                        <outlet property="buttonLabel" destination="u9U-MO-aZI" id="x4r-Vq-IAa"/>
                         <outlet property="curveLabel" destination="FJT-rV-q7g" id="be4-hc-V2D"/>
                         <outlet property="delayLabel" destination="Rjp-6A-OVB" id="c01-2t-JuK"/>
                         <outlet property="durationLabel" destination="WLS-4E-yij" id="ywN-jW-2SV"/>

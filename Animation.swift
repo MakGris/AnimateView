@@ -16,9 +16,7 @@ struct Animation {
     let delay: CGFloat
     
     static func getAnimation() -> Animation {
-        let presets = Spring.AnimationPreset.allCases
-        let curves = Spring.AnimationCurve.allCases
-        let someAnimation = Animation(preset: presets.randomElement()?.rawValue ?? "", curve: curves.randomElement()?.rawValue ?? "", force: 1, duration: 1, delay: 1)
+        let someAnimation = Animation(preset: Spring.AnimationPreset.allCases.randomElement()?.rawValue ?? "", curve: Spring.AnimationCurve.allCases.randomElement()?.rawValue ?? "", force: CGFloat.random(in: 0...1), duration: CGFloat.random(in: 1...2), delay: CGFloat.random(in: 0.5...1))
         return someAnimation
     }
     

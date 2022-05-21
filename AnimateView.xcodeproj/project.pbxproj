@@ -49,7 +49,6 @@
 		D5170A182837AAC90038CB04 = {
 			isa = PBXGroup;
 			children = (
-				D5170A382837ACF60038CB04 /* .gitignore */,
 				D5170A232837AAC90038CB04 /* AnimateView */,
 				D5170A222837AAC90038CB04 /* Products */,
 				DDA88710CA2E67F34786CFB3 /* Pods */,
@@ -72,9 +71,9 @@
 				D5170A242837AAC90038CB04 /* AppDelegate.swift */,
 				D5170A262837AAC90038CB04 /* SceneDelegate.swift */,
 				D5170A282837AAC90038CB04 /* ViewController.swift */,
-				D5170A2A2837AAC90038CB04 /* Main.storyboard */,
-				D5170A2D2837AAC90038CB04 /* Assets.xcassets */,
-				D5170A2F2837AAC90038CB04 /* LaunchScreen.storyboard */,
+				D58BE44928389FFD0051AA5D /* StoryBoards */,
+				D58BE44828389FEA0051AA5D /* Resources */,
+				D5170A382837ACF60038CB04 /* .gitignore */,
 				D5170A322837AAC90038CB04 /* Info.plist */,
 			);
 			path = AnimateView;
@@ -87,6 +86,23 @@
 			);
 			name = Model;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		D58BE44828389FEA0051AA5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5170A2D2837AAC90038CB04 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D58BE44928389FFD0051AA5D /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D5170A2A2837AAC90038CB04 /* Main.storyboard */,
+				D5170A2F2837AAC90038CB04 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 		DDA88710CA2E67F34786CFB3 /* Pods */ = {
