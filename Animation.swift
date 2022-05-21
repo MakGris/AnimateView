@@ -8,14 +8,14 @@
 import Foundation
 
 struct Animation {
-    let name: String
+    let preset: String
     let curve: String
     let force: CGFloat
     let duration: CGFloat
     let delay: CGFloat
     
     static func getAnimation() -> Animation {
-        let someAnimation = Animation(name: AnimationPreset.allCases.randomElement(), curve: AnimationCurve.allCases.randomElement(), force: 0...1, duration: 1...3, delay: 0...2)
+        let someAnimation = Animation(preset: AnimationPreset.allCases.randomElement(), curve: AnimationCurve.allCases.randomElement(), force: 0...1, duration: 1...3, delay: 0...2)
     }
     
 }
