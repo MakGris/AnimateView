@@ -1,0 +1,6 @@
+framework module Pods_AnimateView {
+  umbrella header "Pods-AnimateView-umbrella.h"
+
+  export *
+  module * { export * }
+}

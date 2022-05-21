@@ -14,9 +14,13 @@
 		D5170A2E2837AAC90038CB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5170A2D2837AAC90038CB04 /* Assets.xcassets */; };
 		D5170A312837AAC90038CB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5170A2F2837AAC90038CB04 /* LaunchScreen.storyboard */; };
 		D5170A392837ACF60038CB04 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D5170A382837ACF60038CB04 /* .gitignore */; };
+		D52C67452838A1CD0098942D /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C67442838A1CD0098942D /* Animation.swift */; };
+		D8F3196367004E3AE01BD82C /* Pods_AnimateView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9940F63B899B84D02492576 /* Pods_AnimateView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44059EFA211A014C03FC75B9 /* Pods-AnimateView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimateView.debug.xcconfig"; path = "Target Support Files/Pods-AnimateView/Pods-AnimateView.debug.xcconfig"; sourceTree = "<group>"; };
+		B97385E391C2C694170B72DE /* Pods-AnimateView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimateView.release.xcconfig"; path = "Target Support Files/Pods-AnimateView/Pods-AnimateView.release.xcconfig"; sourceTree = "<group>"; };
 		D5170A212837AAC90038CB04 /* AnimateView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimateView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5170A242837AAC90038CB04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5170A262837AAC90038CB04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		D5170A302837AAC90038CB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5170A322837AAC90038CB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5170A382837ACF60038CB04 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D52C67442838A1CD0098942D /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		D9940F63B899B84D02492576 /* Pods_AnimateView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimateView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F3196367004E3AE01BD82C /* Pods_AnimateView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,9 +49,10 @@
 		D5170A182837AAC90038CB04 = {
 			isa = PBXGroup;
 			children = (
-				D5170A382837ACF60038CB04 /* .gitignore */,
 				D5170A232837AAC90038CB04 /* AnimateView */,
 				D5170A222837AAC90038CB04 /* Products */,
+				DDA88710CA2E67F34786CFB3 /* Pods */,
+				E2086867F3D44D460DA3F1B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,15 +67,74 @@
 		D5170A232837AAC90038CB04 /* AnimateView */ = {
 			isa = PBXGroup;
 			children = (
-				D5170A242837AAC90038CB04 /* AppDelegate.swift */,
-				D5170A262837AAC90038CB04 /* SceneDelegate.swift */,
-				D5170A282837AAC90038CB04 /* ViewController.swift */,
-				D5170A2A2837AAC90038CB04 /* Main.storyboard */,
-				D5170A2D2837AAC90038CB04 /* Assets.xcassets */,
-				D5170A2F2837AAC90038CB04 /* LaunchScreen.storyboard */,
-				D5170A322837AAC90038CB04 /* Info.plist */,
+				D52C67432838A1BD0098942D /* Model */,
+				D58BE44B2838A07A0051AA5D /* App */,
+				D58BE44A2838A0640051AA5D /* ViewControllers */,
+				D58BE44928389FFD0051AA5D /* StoryBoards */,
+				D58BE44828389FEA0051AA5D /* Resources */,
+				D5170A382837ACF60038CB04 /* .gitignore */,
 			);
 			path = AnimateView;
+			sourceTree = "<group>";
+		};
+		D52C67432838A1BD0098942D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D52C67442838A1CD0098942D /* Animation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D58BE44828389FEA0051AA5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5170A2D2837AAC90038CB04 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D58BE44928389FFD0051AA5D /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D5170A2A2837AAC90038CB04 /* Main.storyboard */,
+				D5170A2F2837AAC90038CB04 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D58BE44A2838A0640051AA5D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5170A282837AAC90038CB04 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D58BE44B2838A07A0051AA5D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D5170A242837AAC90038CB04 /* AppDelegate.swift */,
+				D5170A262837AAC90038CB04 /* SceneDelegate.swift */,
+				D5170A322837AAC90038CB04 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DDA88710CA2E67F34786CFB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44059EFA211A014C03FC75B9 /* Pods-AnimateView.debug.xcconfig */,
+				B97385E391C2C694170B72DE /* Pods-AnimateView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2086867F3D44D460DA3F1B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9940F63B899B84D02492576 /* Pods_AnimateView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5170A352837AAC90038CB04 /* Build configuration list for PBXNativeTarget "AnimateView" */;
 			buildPhases = (
+				B331EFE6936846F6BF8CFAC9 /* [CP] Check Pods Manifest.lock */,
 				D5170A1D2837AAC90038CB04 /* Sources */,
 				D5170A1E2837AAC90038CB04 /* Frameworks */,
 				D5170A1F2837AAC90038CB04 /* Resources */,
+				AC2D5DEE481078B832E3278B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,6 +206,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC2D5DEE481078B832E3278B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimateView/Pods-AnimateView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimateView/Pods-AnimateView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimateView/Pods-AnimateView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B331EFE6936846F6BF8CFAC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimateView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5170A1D2837AAC90038CB04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +255,7 @@
 			files = (
 				D5170A292837AAC90038CB04 /* ViewController.swift in Sources */,
 				D5170A252837AAC90038CB04 /* AppDelegate.swift in Sources */,
+				D52C67452838A1CD0098942D /* Animation.swift in Sources */,
 				D5170A272837AAC90038CB04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +398,7 @@
 		};
 		D5170A362837AAC90038CB04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44059EFA211A014C03FC75B9 /* Pods-AnimateView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +406,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 586H9K983F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimateView/Info.plist;
+				INFOPLIST_FILE = AnimateView/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -314,6 +427,7 @@
 		};
 		D5170A372837AAC90038CB04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97385E391C2C694170B72DE /* Pods-AnimateView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,7 +435,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 586H9K983F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimateView/Info.plist;
+				INFOPLIST_FILE = AnimateView/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
