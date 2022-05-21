@@ -1,8 +1,8 @@
 //
 //  Animation.swift
-//  
+//  AnimateView
 //
-//  Created by Maksim Grischenko on 20.05.2022.
+//  Created by Maksim Grischenko on 21.05.2022.
 //
 
 import Foundation
